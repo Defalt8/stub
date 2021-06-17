@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 		for(int i=3; i<argc; ++i)
 		{
 			keys[i-3] = (uint8_t)atoi(argv[i]);
-			printf("%hhu ", keys[i]);
+			printf("%hhu ", keys[i-3]);
 		}
 		printf("\n");
 		char *buffer = calloc(msg_len+1, 1);
