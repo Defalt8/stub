@@ -51,6 +51,9 @@ double Time::deltaTime() const
 
 int main(int argc, char* argv[])
 {
+	// args: [num_of_tests] [iterations]
+	if(argc == 1)
+		printf("USAGE %s [num_of_tests] [iterations]\n", argv[0]);
 	int N = 3;
 	long iterations = 1000000L;
 	if(argc > 1) N = atoi(argv[1]);
