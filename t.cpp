@@ -71,7 +71,7 @@ int main(int argc, char* argv[])
 		* i=i+1	; 2 - assignment and operation
 		* jmpc	; 1 - hidden conditional jump instruction
 		*/
-		for(register long i=0; i<iterations; i=i+1); // instruction_count == 4.0;
+		for(volatile long i=0; i<iterations; i=i+1); // instruction_count == 4.0;
 		dt = t.deltaTime();
 		if(dt < 0.0) continue;
 		tdt += dt;
